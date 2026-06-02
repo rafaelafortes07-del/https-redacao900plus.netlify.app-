@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profa. Rafaela Fortes - Redação Nota 900+ no ENEM</title>
+<meta name="description" content="Aulas de Redação para o ENEM com a Profa. Rafaela Fortes. 28 anos de experiência, Mestrado em Letras. Online para todo Brasil e presencial em Brasília.">
+<meta name="theme-color" content="#8B0000">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    :root {
+        --burgundy: #8B0000;
+        --blue: #1E40AF;
+        --green: #15803D;
+        --orange: #EA580C;
+        --gray-50: #F9FAFB;
+        --gray-100: #F3F4F6;
+        --gray-600: #4B5563;
+        --gray-800: #1F2937;
+        --gray-900: #111827;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--gray-800);
+        background: #fff;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    
+    /* Header */
+    header {
+        background: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, var(--burgundy), var(--blue));
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-text h2 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--gray-900);
+        line-height: 1.2;
+    }
+    
+    .logo-text p {
+        font-size: 0.75rem;
+        color: var(--gray-600);
+    }
+    
+    nav {
+        display: none;
+        gap: 2rem;
+    }
+    
+    nav a {
+        color: var(--gray-800);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+    
+    nav a:hover {
+        color: var(--burgundy);
+    }
+    
+    .btn-header {
+        display: none;
+        background: var(--burgundy);
+        color: #fff;
+        padding: 0.625rem 1.25rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s;
+    }
+    
+    .btn-header:hover {
+        background: #6B0000;
+        transform: translateY(-1px);
+    }
+    
+    .mobile-menu-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    
+    .mobile-menu {
+        display: none;
+        border-top: 1px solid var(--gray-100);
+        padding: 1rem;
+        background: #fff;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+    
+    .mobile-menu a {
+        display: block;
+        padding: 0.75rem 0;
+        color: var(--gray-800);
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    /* Hero */
+    .hero {
+        background: linear-gradient(135deg, var(--burgundy) 0%, var(--blue) 100%);
+        color: #fff;
+        padding: 4rem 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        border-radius: 50%;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 3rem;
+    }
+    
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero h1 span {
+        color: var(--orange);
+    }
+    
+    .hero p {
+        font-size: 1.125rem;
+        color: rgba(255,255,255,0.9);
+        margin-bottom: 2rem;
+        max-width: 600px;
+    }
+    
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .btn-whatsapp {
+        background: #25D366;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.125rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        transition: all 0.3s;
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+    }
+    
+    .btn-whatsapp:hover {
+        background: #1FA851;
+        transform: translateY(-2px);
+        box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+    }
+    
+    .btn-secondary {
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.3);
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.125rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        transition: all 0.3s;
+    }
+    
+    .btn-secondary:hover {
+        background: rgba(255,255,255,0.25);
+    }
+    
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 0.25rem;
+    }
+    
+    .stat-label {
+        font-size: 0.875rem;
+        color: rgba(255,255,255,0.8);
+    }
+    
+    /* Fixed WhatsApp */
+    .whatsapp-fixed {
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        background: #25D366;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 50px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        z-index: 999;
+        transition: all 0.3s;
+        font-weight: 600;
+    }
+    
+    .whatsapp-fixed:hover {
+        transform: scale(1.05);
+    }
+    
+    .whatsapp-fixed span {
+        display: none;
+    }
+    
+    /* Credentials */
+    .credentials {
+        background: #fff;
+        padding: 3rem 1rem;
+        border-bottom: 1px solid var(--gray-100);
+    }
+    
+    .credentials-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .credential-item {
+        text-align: center;
+    }
+    
+    .credential-icon {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto 1rem;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .credential-item:nth-child(1) .credential-icon {
+        background: #FEF2F2;
+        color: var(--burgundy);
+    }
+    
+    .credential-item:nth-child(2) .credential-icon {
+        background: #EFF6FF;
+        color: var(--blue);
+    }
+    
+    .credential-item:nth-child(3) .credential-icon {
+        background: #F0FDF4;
+        color: var(--green);
+    }
+    
+    .credential-item:nth-child(4) .credential-icon {
+        background: #FFF7ED;
+        color: var(--orange);
+    }
+    
+    .credential-item p {
+        font-weight: 600;
+        color: var(--gray-900);
+    }
+    
+    /* Sections */
+    section {
+        padding: 4rem 1rem;
+    }
+    
+    .section-header {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 3rem;
+    }
+    
+    .section-label {
+        color: var(--orange);
+        font-weight: 600;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        display: block;
+        margin-bottom: 0.75rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--gray-900);
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+    
+    .section-title span {
+        background: linear-gradient(135deg, var(--burgundy), var(--orange));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .section-desc {
+        font-size: 1.125rem;
+        color: var(--gray-600);
+    }
+    
+    /* About */
+    .about {
+        background: linear-gradient(180deg, var(--gray-50) 0%, #fff 100%);
+    }
+    
+    .about-grid {
+        display: grid;
+        gap: 3rem;
+    }
+    
+    .about-content p {
+        font-size: 1.125rem;
+        color: var(--gray-600);
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+    }
+    
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .feature-item {
+        background: #fff;
+        padding: 1.25rem;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    
+    .feature-item:nth-child(1) .feature-icon {
+        background: #FEF2F2;
+        color: var(--burgundy);
+    }
+    
+    .feature-item:nth-child(2) .feature-icon {
+        background: #EFF6FF;
+        color: var(--blue);
+    }
+    
+    .feature-item:nth-child(3) .feature-icon {
+        background: #F0FDF4;
+        color: var(--green);
+    }
+    
+    .feature-content h3 {
+        font-weight: 700;
+        color: var(--gray-900);
+        margin-bottom: 0.25rem;
+    }
+    
+    .feature-content p {
+        font-size: 0.875rem;
+        color: var(--gray-600);
+        margin: 0;
+    }
+    
+    .about-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .about-card {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+        transition: all 0.3s;
+    }
+    
+    .about-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .about-card-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .about-card:nth-child(1) .about-card-icon {
+        background: var(--burgundy);
+        color: #fff;
+    }
+    
+    .about-card:nth-child(2) .about-card-icon {
+        background: var(--orange);
+        color: #fff;
+    }
+    
+    .about-card:nth-child(3) .about-card-icon {
+        background: var(--blue);
+        color: #fff;
+    }
+    
+    .about-card:nth-child(4) .about-card-icon {
+        background: var(--green);
+        color: #fff;
+    }
+    
+    .about-card h3 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: var(--gray-900);
+    }
+    
+    .about-card p {
+        font-size: 0.875rem;
+        color: var(--gray-600);
+    }
+    
+    /* Schedule */
+    .schedule-grid {
+        display: grid;
+        gap: 1.5rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .schedule-card {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+        border-top: 4px solid;
+        transition: all 0.3s;
+    }
+    
+    .schedule-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .schedule-card:nth-child(1) {
+        border-color: var(--burgundy);
+    }
+    
+    .schedule-card:nth-child(2) {
+        border-color: var(--blue);
+    }
+    
+    .schedule-card:nth-child(3) {
+        border-color: var(--green);
+    }
+    
+    .schedule-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .schedule-card:nth-child(1) .schedule-icon {
+        background: #FEF2F2;
+        color: var(--burgundy);
+    }
+    
+    .schedule-card:nth-child(2) .schedule-icon {
+        background: #EFF6FF;
+        color: var(--blue);
+    }
+    
+    .schedule-card:nth-child(3) .schedule-icon {
+        background: #F0FDF4;
+        color: var(--green);
+    }
+    
+    .schedule-card h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--gray-900);
+    }
+    
+    .schedule-time {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+    }
+    
+    .schedule-card:nth-child(1) .schedule-time {
+        color: var(--burgundy);
+    }
+    
+    .schedule-card:nth-child(2) .schedule-time {
+        color: var(--blue);
+    }
+    
+    .schedule-card:nth-child(3) .schedule-time {
+        color: var(--green);
+    }
+    
+    .schedule-card p {
+        font-size: 0.875rem;
+        color: var(--gray-600);
+    }
+    
+    .info-box {
+        max-width: 700px;
+        margin: 3rem auto 0;
+        background: #FFF7ED;
+        border-left: 4px solid var(--orange);
+        padding: 1.5rem;
+        border-radius: 12px;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .info-box-icon {
+        color: var(--orange);
+        flex-shrink: 0;
+    }
+    
+    .info-box h4 {
+        font-weight: 700;
+        color: var(--gray-900);
+        margin-bottom: 0.25rem;
+    }
+    
+    .info-box p {
+        font-size: 0.875rem;
+        color: var(--gray-800);
+    }
+    
+    /* Contact */
+    .contact-grid {
+        display: grid;
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .contact-card {
+        padding: 2rem;
+        border-radius: 16px;
+        color: #fff;
+        transition: all 0.3s;
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-4px);
+    }
+    
+    .contact-card:nth-child(1) {
+        background: linear-gradient(135deg, #25D366 0%, #1FA851 100%);
+        box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+    }
+    
+    .contact-card:nth-child(2) {
+        background: linear-gradient(135deg, #E4405F 0%, #C13584 100%);
+        box-shadow: 0 10px 30px rgba(228, 64, 95, 0.3);
+    }
+    
+    .contact-card-icon {
+        width: 64px;
+        height: 64px;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-card h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-card p {
+        color: rgba(255,255,255,0.9);
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-card a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #fff;
+        padding: 0.875rem 1.5rem;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.2s;
+    }
+    
+    .contact-card:nth-child(1) a {
+        color: #25D366;
+    }
+    
+    .contact-card:nth-child(2) a {
+        color: #E4405F;
+    }
+    
+    .contact-card a:hover {
+        transform: scale(1.05);
+    }
+    
+    .location-grid {
+        display: grid;
+        gap: 1.5rem;
+        max-width: 900px;
+        margin: 3rem auto 0;
+    }
+    
+    .location-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .location-card:nth-child(1) {
+        background: #FEF2F2;
+    }
+    
+    .location-card:nth-child(2) {
+        background: #EFF6FF;
+    }
+    
+    .location-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    
+    .location-card:nth-child(1) .location-icon {
+        background: var(--burgundy);
+        color: #fff;
+    }
+    
+    .location-card:nth-child(2) .location-icon {
+        background: var(--blue);
+        color: #fff;
+    }
+    
+    .location-card h4 {
+        font-weight: 700;
+        color: var(--gray-900);
+        margin-bottom: 0.25rem;
+    }
+    
+    .location-card p {
+        font-size: 0.875rem;
+        color: var(--gray-800);
+    }
+    
+    /* Footer */
+    footer {
+        background: var(--gray-900);
+        color: #9CA3AF;
+        padding: 3rem 1rem 2rem;
+    }
+    
+    .footer-grid {
+        display: grid;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-logo-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--burgundy);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer h3 {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+    
+    .footer p {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+    
+    .footer h4 {
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .footer ul {
+        list-style: none;
+    }
+    
+    .footer ul li {
+        margin-bottom: 0.75rem;
+    }
+    
+    .footer a {
+        color: #9CA3AF;
+        text-decoration: none;
+        transition: color 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .footer a:hover {
+        color: #fff;
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid #374151;
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    
+    /* Responsive */
+    @media (min-width: 640px) {
+        .hero-buttons {
+            flex-direction: row;
+        }
+        
+        .whatsapp-fixed span {
+            display: inline;
+        }
+        
+        .credentials-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    
+    @media (min-width: 768px) {
+        nav {
+            display: flex;
+        }
+        
+        .btn-header {
+            display: inline-block;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+        }
+        
+        .about-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .schedule-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .contact-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .location-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .footer-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .hero-content {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        
+        .about-grid {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- WhatsApp Fixed Button -->
+<a href="https://wa.me/5561999850669" target="_blank" rel="noopener noreferrer" class="whatsapp-fixed">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+    <span>Fale Comigo</span>
+</a>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                        <path d="M2 2l7.586 7.586"></path>
+                        <circle cx="11" cy="11" r="2"></circle>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h2>Profa. Rafaela Fortes</h2>
+                    <p>Redação ENEM</p>
+                </div>
+            </div>
+            
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#horarios">Horários</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            
+            <a href="https://wa.me/5561999850669" target="_blank" class="btn-header">Agendar Aula</a>
+            
+            <button class="mobile-menu-btn" id="menuToggle">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#sobre">Sobre</a>
+        <a href="#horarios">Horários</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5561999850669" target="_blank" style="background: var(--burgundy); color: #fff; text-align: center; border-radius: 8px; margin-top: 0.5rem;">Agendar Aula</a>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div>
+                <div class="badge">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    28 anos de experiência
+                </div>
+                
+                <h1>REDAÇÃO<br><span>NOTA 900+</span><br>NO ENEM</h1>
+                
+                <p>Conquiste a redação dos seus sonhos com metodologia comprovada e acompanhamento personalizado. Aulas online para todo Brasil e presenciais em Brasília.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5561999850669" target="_blank" class="btn-whatsapp">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                        Começar Agora
+                    </a>
+                    <a href="#sobre" class="btn-secondary">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                        Saiba Mais
+                    </a>
+                </div>
+                
+                <div class="stats">
+                    <div>
+                        <div class="stat-number">28+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Alunos Aprovados</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">900+</div>
+                        <div class="stat-label">Nota Média Alunos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Credentials -->
+<section class="credentials">
+    <div class="container">
+        <div class="credentials-grid">
+            <div class="credential-item">
+                <div class="credential-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                </div>
+                <p>Mestrado em Letras</p>
+            </div>
+            <div class="credential-item">
+                <div class="credential-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 0 0 1 4 19.5v-15A2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                </div>
+                <p>Graduada em Letras</p>
+            </div>
+            <div class="credential-item">
+                <div class="credential-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9.5 2A2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 0 0 1 9.5 2Z"></path>
+                        <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"></path>
+                    </svg>
+                </div>
+                <p>Especialização em Metodologias de Ensino da Língua Portuguesa</p>
+            </div>
+            <div class="credential-item">
+                <div class="credential-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <p>Aulas Individuais</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="sobre">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <span class="section-label">Sobre Mim</span>
+                <h2 class="section-title">Experiência que <span>Transforma Redações</span> em Aprovação</h2>
+                <p>Com 28 anos dedicados ao ensino de Língua Portuguesa e Redação, desenvolvi uma metodologia única que já ajudou milhares de estudantes a alcançarem notas 900+ no ENEM e em vestibulares de todo o país.</p>
+                <p>Minha formação acadêmica sólida em Letras, com Mestrado e Especialização em Metodologias de Ensino da Língua Portuguesa, garante que você receba não apenas conhecimento, mas estratégia e técnica comprovadas.</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Correção Detalhada</h3>
+                            <p>Análise completa com feedback personalizado em cada competência do ENEM</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Material Exclusivo</h3>
+                            <p>Repertórios, modelos de redação e técnicas atualizadas</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Acompanhamento Contínuo</h3>
+                            <p>Suporte via WhatsApp para dúvidas e orientações</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Online</h3>
+                    <p>Para todo Brasil via Google Meet ou Zoom</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Presencial</h3>
+                    <p>Em Brasília - DF</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Individual</h3>
+                    <p>Aulas 100% personalizadas para você</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Resultados</h3>
+                    <p>Metodologia com histórico comprovado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Schedule -->
+<section id="horarios" style="background: linear-gradient(180deg, var(--gray-50) 0%, #fff 100%);">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Disponibilidade</span>
+            <h2 class="section-title">Horários de <span>Atendimento</span></h2>
+            <p class="section-desc">Escolha o melhor horário para suas aulas online ou presenciais</p>
+        </div>
+        
+        <div class="schedule-grid">
+            <div class="schedule-card">
+                <div class="schedule-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </div>
+                <h3>Segunda-feira</h3>
+                <div class="schedule-time">10h às 19h</div>
+                <p>Horário estendido para sua comodidade</p>
+            </div>
+            
+            <div class="schedule-card">
+                <div class="schedule-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </div>
+                <h3>Terça a Sexta</h3>
+                <div class="schedule-time">A partir das 19h</div>
+                <p>Perfeito para quem estuda ou trabalha</p>
+            </div>
+            
+            <div class="schedule-card">
+                <div class="schedule-icon">
+                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 18a5 5 0 0 0-10 0"></path>
+                        <line x1="12" y1="2" x2="12" y2="9"></line>
+                        <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line>
+                        <line x1="1" y1="18" x2="3" y2="18"></line>
+                        <line x1="21" y1="18" x2="23" y2="18"></line>
+                        <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line>
+                        <line x1="23" y1="22" x2="1" y2="22"></line>
+                        <polyline points="8 6 12 2 16 6"></polyline>
+                    </svg>
+                </div>
+                <h3>Sábado</h3>
+                <div class="schedule-time">8h às 12h</div>
+                <p>Manhã de estudos intensivos</p>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <div class="info-box-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+            </div>
+            <div>
+                <h4>Horários Flexíveis</h4>
+                <p>Caso precise de um horário alternativo, entre em contato para verificarmos a disponibilidade. Atendimento online para todo Brasil e presencial em Brasília.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contato">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">Contato</span>
+            <h2 class="section-title">Vamos <span>Conversar?</span></h2>
+            <p class="section-desc">Tire suas dúvidas e comece hoje mesmo sua jornada rumo à nota 900+</p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                    <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Resposta rápida e atendimento personalizado</p>
+                <a href="https://wa.me/5561999850669" target="_blank">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    (61) 99985-0669
+                </a>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-card-icon">
+                    <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </div>
+                <h3>Instagram</h3>
+                <p>Dicas diárias e conteúdos exclusivos</p>
+                <a href="https://instagram.com/rafaela.fortes.5" target="_blank">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M16 8v5a3 3 0 0 0 6 0v-5a3 3 0 0 0-6 0z"></path>
+                        <path d="M12 8v5a3 3 0 0 0 6 0v-5a3 3 0 0 0-6 0z"></path>
+                    </svg>
+                    @rafaela.fortes.5
+                </a>
+            </div>
+        </div>
+        
+        <div class="location-grid">
+            <div class="location-card">
+                <div class="location-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4>Atendimento Online</h4>
+                    <p>Para todo Brasil via Google Meet ou Zoom</p>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <div class="location-icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <div>
+                    <h4>Atendimento Presencial</h4>
+                    <p>Brasília - DF</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            <path d="M2 2l7.586 7.586"></path>
+                            <circle cx="11" cy="11" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Profa. Rafaela Fortes</h3>
+                        <p style="font-size: 0.75rem; color: #6B7280;">Redação ENEM</p>
+                    </div>
+                <p>28 anos transformando redações em aprovações. Metodologia comprovada para nota 900+ no ENEM.</p>
+            </div>
+            
+            <div>
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#horarios">Horários</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li>
+                        <a href="https://wa.me/5561999850669" target="_blank">
+                            <svg width="16" height="16" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            (61) 99985-0669
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/rafaela.fortes.5" target="_blank">
+                            <svg width="16" height="16" fill="none" stroke="#E4405F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            @rafaela.fortes.5
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <svg width="16" height="16" fill="none" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Brasília - DF | Online para todo Brasil
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Profa. Rafaela Fortes - Todos os direitos reservados | Aulas de Redação ENEM</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+    
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
+    
+    // Smooth scroll with offset for fixed header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
+</body>
+</html>
